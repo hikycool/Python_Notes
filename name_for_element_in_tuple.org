@@ -1,0 +1,41 @@
+* Introduction
+
+  Sometimes we use tuple instead of list because of less memory.
+  And it is hard to maintain when use index in tuple, like S[0],
+  What's more, not beatiful like that.
+  So do it should do something to name for element in tuple
+
+* Named like macro definition
+  
+  For simple, index of number can be redefine in beginning of code file.
+  It is simaliar to Macro definition in C/C++.
+
+** Example:
+   
+   NAME = 0
+   AGE = 1
+   SEX = 2
+   
+   or
+   AGE, SEX = xrange(2)   #enum
+
+* Use namedtuple instead of tuple
+
+  namedtuple is from collections, so before use it. It should be invoke in
+  in beginning of file.
+  
+** Example:
+   
+   from collections import namedtuple
+   
+   # it like to create a new struction in python program
+   Student = namedtule('student', ['name', 'age'])
+   s = Student('Jim', '16')                 # it is simaliar to contructor
+   
+   # we can use 'name' or 'age' to use elemnt.
+   s.name
+   s.age
+
+
+   
+   
