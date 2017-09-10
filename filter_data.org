@@ -1,0 +1,23 @@
+* Go through all element in a structdata
+
+** Exzample: We need number less than equal to 3
+   l = [1, 2, 3, 4, 5]
+   for x in l:
+       if x <= 3:
+           print x
+
+* Function: filter(Function or None, Sequence)
+  if arg[1] == None , the function will return True (bool)
+  if not , return item , the same tpye as 'Sequence'
+
+** Example: filter the all negative number in a list 
+   list = [-1, -2, -3, 3, 2, 1]
+   list = fileter(lambda x : x>0, list)
+   print list
+
+* List judge (recommend, high efficiency)
+
+** Example: filter all the negative number in a list
+   list = [-1, -2, -3, 3, 2, 1]
+   list = [x for x in list if x >= 0]
+   print list
