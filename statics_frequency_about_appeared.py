@@ -11,3 +11,11 @@ count = Counter(data)
 print count
 print count.most_common(2)
 
+
+import re
+
+txt = open('/Users/syu/Desktop/test.log', 'r').read()
+cj = Counter(re.split('\w+', txt))
+
+print cj.most_common(3)
+

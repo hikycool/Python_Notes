@@ -13,5 +13,16 @@
    The counter is a constructor.
    c = Counter(list)
    print c.most_common(3) # print most three frequency in list
+
+* Statics in a English letter list
+
+  Search all letter in a file and then count the frequency of all
+  letter in this file.
+
+** Using re and Counter
+   
+   Using regular expression to splite all letter in every word.
+   re.splite('\w+', txt)
+   Then the Counter can do it.
    
    
