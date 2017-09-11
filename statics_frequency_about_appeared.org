@@ -1,0 +1,17 @@
+* Statics in List
+
+** Make it dictionary
+   
+   new = dict.fromkeys(list, 0)
+   if key in list :
+      new[key] += 1
+   else:
+      new[key] = 1
+
+** Using Counter in collections
+
+   The counter is a constructor.
+   c = Counter(list)
+   print c.most_common(3) # print most three frequency in list
+   
+   
