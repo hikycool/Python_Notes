@@ -16,15 +16,15 @@
 
 *** point which value as the condition for order
     
-    dict.iteriterms() --> [(k1, v1), (k2, v2), ...]
-    sorted(d.iterms(), key = lambda x: x[1])
+    dict.iteritems() --> [(k1, v1), (k2, v2), ...]
+    sorted(d.iteritems(), key = lambda x: x[1])
 
 *** For multi-condition for order
 
-    from operation import itergetter,atrrgetter
+    from operation import itemgetter,atrrgetter
 
-    sorted(d.iteriterms(), key=itermgetter(1, 0))
-    sorted(d.iteriterms(), key=attrgetter('name', 'age')
+    sorted(d.iteritems(), key=itemgetter(1, 0))
+    sorted(d.iteritems(), key=attrgetter('name', 'age')
 
     and the third argument reverse : True -> down
                                      False -> up
