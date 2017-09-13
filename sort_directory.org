@@ -1,0 +1,30 @@
+* Sort a directory in some value order
+
+** Using sorted() function
+   
+*** package all value and key to that: [(v1, k1),(v2, k2), ...]
+
+    dict.keys()
+    dict.values()
+    zip(dict.values(), dict.keys())
+    
+    for more effeciency:
+       using d.iterkeys() and d.itervalues(), for less memory
+       
+
+    sorted(zip(dict.itervalues(), dict.iterkeys()))
+
+*** point which value as the condition for order
+    
+    dict.iteriterms() --> [(k1, v1), (k2, v2), ...]
+    sorted(d.iterms(), key = lambda x: x[1])
+
+*** For multi-condition for order
+
+    from operation import itergetter,atrrgetter
+
+    sorted(d.iteriterms(), key=itermgetter(1, 0))
+    sorted(d.iteriterms(), key=attrgetter('name', 'age')
+
+    and the third argument reverse : True -> down
+                                     False -> up
